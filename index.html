@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Card</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Main Header -->
+  <nav class="main-header">
+    <div class="nav-container">
+    <h1 class="nav-logo">Contact Card</h1>
+    <ul class="nav-list">
+      <li id='addContactLink' class="nav-links">Add Contact</li>
+      <li id='showContactsLink' class="nav-links">Show Contact</li>
+      <li id='editDelLink' class="nav-links">Edit/Delete</li>
+    </ul>
+    </div>
+  </nav>
+  <!-- Main Header End -->
+  <!-- Sidebar Contacts Div -->
+  <div id='sidebar' class="sidebar hide">
+    <i id='closeSidebar' class="bi bi-x-lg"></i>
+    <ul class="sidebar-list">
+      <!-- <li class="sidebar-contact">Filip Tomic</li>
+      <li class="sidebar-contact">Filip Tomic</li>
+      <li class="sidebar-contact">Filip Tomic</li>
+      <li class="sidebar-contact">Filip Tomic</li>
+      <li class="sidebar-contact">Filip Tomic</li>
+      <li class="sidebar-contact">Filip Tomic</li> -->
+    </ul>
+  </div>
+  <!-- Sidebar Contacts Div End -->
+  <!-- Display Card Container -->
+    <div id="mainBody" class="container clearfix">
+      <div class="col-1-4 left">
+        <h2 id='contactName'>Milos Markovic</h2>
+        <img id='contactPhoto' src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBtYW58ZW58MHx8MHx8&w=1000&q=80" alt="Contact Photo">
+        <h2 id="contactJob">Web Developer</h2>
+      </div>
+      <div class="col-1-6 right">
+        <div class="contact-info">
+          <h2>Contact Number : </h2>
+          <span id='contactNumber'>+381 069 000 034</span>
+        </div>
+        <div class="contact-info">
+          <h2>Contact Email : </h2>
+          <span id='contactEmail'>milos56@gmail.com</span>
+        </div>
+        <div class="contact-info">
+          <h2>Contact Skype : </h2>
+          <span id='contactSkype'>milos56</span>
+        </div>
+        <div class="contact-info">
+          <h2>Contact Instagram : </h2>
+          <span id='contactInstagram'>milosh_56_</span>
+        </div>
+        <div class="contact-info">
+          <h2>Contact Site : </h2>
+          <span id='contactSite'>www.miloshWeb.com</span>
+        </div>
+      </div>
+      </div>
+  <!-- Display Card Container End -->
+  <!-- Add Contact Form -->
+  <div id='formBody' class="container-md hide clearfix">
+      <div class="input-div">
+        <label>Contact Name</label>
+        <input id='nameInput' type="text" placeholder='Milos Markovic'>
+      </div>
+      <div class="input-div">
+        <label>Contact Photo</label>
+        <input id='photoInput' type="url" placeholder="https://example.com">
+      </div>
+      <div class="input-div">
+        <label>Contact Job Position</label>
+        <input id='jobInput' type="text" placeholder='Web Developer / Front End Developer / Designer'>
+      </div>
+      <div class="input-div">
+        <label>Contact Number</label>
+        <input id='numberInput' type="text" placeholder='+381 069 000 069'>
+      </div>
+      <div class="input-div">
+        <label>Contact Email</label>
+        <input id='emailInput' type="url" placeholder="https://example.com">
+      </div>
+      <div class="input-div">
+        <label>Contact Skype</label>
+        <input id='skypeInput' type="text" placeholder='milosh56'>
+      </div>
+      <div class="input-div">
+        <label>Contact Instagram</label>
+        <input id='instagramInput' type="text" placeholder='milosh_56_'>
+      </div>
+      <div class="input-div">
+        <label>Contact Site</label>
+        <input id='siteInput' type="url" placeholder="www.miloshWeb.com">
+      </div>
+      <div class="controls">
+        <button title='Go Back' id='backBtn' class="btn"><i class="bi bi-arrow-left"></i></button>
+        <button title='Save Contact' id='saveBtn' class="btn">Save</button>
+    </div>
+    </div>
+  <!-- Add Contact Form End -->
+  <!-- Edit Contact Form -->
+  <div id='editFormBody' class="container-md hide clearfix">
+      <div class="input-div">
+        <label>Contact Name</label>
+        <input id='enameInput' type="text" placeholder='Milos Markovic'>
+      </div>
+      <div class="input-div">
+        <label>Contact Photo</label>
+        <input id='ephotoInput' type="url" placeholder="https://example.com">
+      </div>
+      <div class="input-div">
+        <label>Contact Job Position</label>
+        <input id='ejobInput' type="text" placeholder='Web Developer / Front End Developer / Designer'>
+      </div>
+      <div class="input-div">
+        <label>Contact Number</label>
+        <input id='enumberInput' type="text" placeholder='+381 069 000 069'>
+      </div>
+      <div class="input-div">
+        <label>Contact Email</label>
+        <input id='eemailInput' type="url" placeholder="https://example.com">
+      </div>
+      <div class="input-div">
+        <label>Contact Skype</label>
+        <input id='eskypeInput' type="text" placeholder='milosh56'>
+      </div>
+      <div class="input-div">
+        <label>Contact Instagram</label>
+        <input id='einstagramInput' type="text" placeholder='milosh_56_'>
+      </div>
+      <div class="input-div">
+        <label>Contact Site</label>
+        <input id='esiteInput' type="url" placeholder="www.miloshWeb.com">
+      </div>
+      <div class="controls">
+        <button title='Go Back' id='ebackBtn' class="btn"><i class="bi bi-arrow-left"></i></button>
+        <button title='Save Contact' id='esaveBtn' class="btn">Save</button>
+    </div>
+    </div>
+  <!-- Edit Contact Form End -->
+<script src="main.js" charset="utf-8"></script>
+<script src="contacts.js" charset="utf-8"></script>
+<script src="display.js" charset="utf-8"></script>
+<script src="editDel.js" charset="utf-8"></script>
+</body>
+</html>

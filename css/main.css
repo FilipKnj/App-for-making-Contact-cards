@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --border-color : #cccccc;
+  --main-gray: #f2f2f2;
+  --shadow-color: #a6a6a6;
+}
+
+html,body{
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+  overflow-x: hidden;
+}
+
+.main-header{
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #cccccc;
+  position: sticky;
+  top:0;
+  left:0;
+}
+.nav-container{
+  width: 65%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo{
+  font-family: "Yellowtail",sans-serif;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: lighter;
+}
+.nav-list{
+  margin-right: 50px;
+}
+.nav-links{
+  float:left;
+  margin-right: 20px;
+  list-style: none;
+  cursor: pointer;
+  padding: 5px;
+  padding-right: 20px;
+  border-right: 1px solid #ddd;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  transition: all .5s ease;
+}
+.nav-links:last-child{
+  border-right: none;
+}
+.nav-links:hover{
+  animation: example 3s;
+  text-decoration: underline;
+}
+@keyframes example {
+  0% { opacity : 0;},
+  50% { opacity: 1;},
+  100$ { opacity: 0;}
+}
+.container{
+  width: 1100px;
+  margin-top: 50px;
+  margin-left: 300px;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+.container h2{
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.left{
+  border-right: 1px solid var(--border-color);
+}
+.col-1-5{
+  width: 50%;
+}
+.col-1-4{
+  width: 40%;
+}
+.col-1-6{
+  width: 60%;
+}
+.col-1-4,.col-1-5,.col-1-6{
+  height: 100%;
+  float: left;
+  padding: 10px;
+}
+#contactPhoto{
+  width: 40%;
+  height: auto;
+  margin: 10px 150px;
+  border-radius: 5px;
+}
+#contactJob{
+  margin: 10px auto;
+  text-align: center;
+}
+.contact-info{
+  margin: 10px 0px;
+  border-bottom: 1px solid var(--border-color);
+  padding: 5px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span{
+  width: 250px;
+  margin-right: 50px;
+  padding: 5px 10px;
+  border:1px solid var(--border-color);
+  background:var(--main-gray);
+  font-family: "Barlow",cursive;
+  letter-spacing: 3px;
+}
+.container-md{
+  padding: 10px;
+  width: 650px;
+  margin: 50px auto;
+  background: #fff;
+  border: 1px solid var(--border-color);
+}
+.input-div{
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  padding: 7px 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+.input-div label{
+  margin-bottom: 3px;
+  font-size: 20px;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.input-div input{
+  background: var(--main-gray);
+  border: 1px solid var(--border-color);
+  padding: 5px 8px;
+  border-radius: 5px;
+  transition: all .5s ease;
+}
+.input-div input:focus{
+  box-shadow: 2px 3px 1px var(--shadow-color);
+  outline:none;
+}
+.input-div:nth-child(even){
+  border-bottom: 1px solid red;
+}
+.controls{
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  justify-content:space-between;
+}
+.btn{
+  width: 120px;
+  height: 30px;
+  border: 1px solid var(--border-color);
+  background:var(--main-gray);
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: all .3s ease;
+  font-family: 'Barlow',cursive;
+  line-height: 30px;
+}
+.btn:hover{
+  box-shadow: 2px 3px 1px var(--shadow-color);
+  background: #fff;
+  border: none;
+}
+.sidebar{
+  width: 220px;
+  height: calc(100% - 60px);
+  border-right: 1px solid var(--border-color);
+  position: absolute;
+  background: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  overflow-y: scroll;
+}
+
+.sidebar-contact{
+  list-style: none;
+  margin: 15px auto;
+  padding: 10px 0;
+  cursor: pointer;
+  font-family: 'Barlow',sans-serif;
+  transition: all .2 ease;
+}
+.sidebar-contact:nth-child(odd){
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.sidebar-contact:nth-child(even){
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.sidebar-contact:hover{
+  z-index: 3;
+  border: 1px solid var(--border-color);
+  background: var(--main-gray);
+  text-shadow: 2px 3px 2px var(--shadow-color);
+}
+.sidebar-contact i{
+  padding: 5px;
+  margin: 0 1px;
+}
+#closeSidebar{
+  z-index: 0;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  transition: all .5s ease;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.sidebar i:hover{
+  background: red;
+  color:#fff;
+  text-shadow: none;
+}
+
+/*****************************
+        Helper Classes
+*****************************/
+.clearfix:before,
+.clearfix:after{
+  content: " ";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+
+.hide{
+  display: none;
+}
